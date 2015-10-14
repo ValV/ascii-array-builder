@@ -191,7 +191,7 @@ int main(int argc, char *argv[]) {
 			}
 		}
 	}
-	fprintf(logo, "\n}\n");
+	fprintf(logo, "\n};\n");
 	// Restore original handler, free pointers and return
 	signal(SIGINT, ori_handler);
 	for (i = j; i >= 0; i --) free(inbuf[i]);
